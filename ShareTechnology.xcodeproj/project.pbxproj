@@ -32,6 +32,11 @@
 		A51766DF2174C38700485CDA /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766D72174C38700485CDA /* DBManager.m */; };
 		A51766E32174C3BC00485CDA /* STWCoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766E22174C3BC00485CDA /* STWCoreDataViewController.m */; };
 		A51766E72175780D00485CDA /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766E62175780D00485CDA /* NSString+Extension.m */; };
+		A51766EE2175825100485CDA /* STWCalculationOfWagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766ED2175825100485CDA /* STWCalculationOfWagesViewController.m */; };
+		A51766F42175829D00485CDA /* TaxLevel.plist in Resources */ = {isa = PBXBuildFile; fileRef = A51766EF2175829D00485CDA /* TaxLevel.plist */; };
+		A51766F52175829D00485CDA /* TWTaxLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766F02175829D00485CDA /* TWTaxLevel.m */; };
+		A51766F62175829D00485CDA /* TWCalculationOfWagesCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766F32175829D00485CDA /* TWCalculationOfWagesCommon.m */; };
+		A51766F92175881600485CDA /* STWWagesBill.m in Sources */ = {isa = PBXBuildFile; fileRef = A51766F82175881600485CDA /* STWWagesBill.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +92,15 @@
 		A51766E22174C3BC00485CDA /* STWCoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STWCoreDataViewController.m; sourceTree = "<group>"; };
 		A51766E52175780D00485CDA /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		A51766E62175780D00485CDA /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		A51766EC2175825100485CDA /* STWCalculationOfWagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWCalculationOfWagesViewController.h; sourceTree = "<group>"; };
+		A51766ED2175825100485CDA /* STWCalculationOfWagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STWCalculationOfWagesViewController.m; sourceTree = "<group>"; };
+		A51766EF2175829D00485CDA /* TaxLevel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TaxLevel.plist; sourceTree = "<group>"; };
+		A51766F02175829D00485CDA /* TWTaxLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTaxLevel.m; sourceTree = "<group>"; };
+		A51766F12175829D00485CDA /* TWTaxLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTaxLevel.h; sourceTree = "<group>"; };
+		A51766F22175829D00485CDA /* TWCalculationOfWagesCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWCalculationOfWagesCommon.h; sourceTree = "<group>"; };
+		A51766F32175829D00485CDA /* TWCalculationOfWagesCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWCalculationOfWagesCommon.m; sourceTree = "<group>"; };
+		A51766F72175881600485CDA /* STWWagesBill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STWWagesBill.h; sourceTree = "<group>"; };
+		A51766F82175881600485CDA /* STWWagesBill.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STWWagesBill.m; sourceTree = "<group>"; };
 		FBFC1C9EC08BBE7ED7EA0E1C /* Pods-ShareTechnology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTechnology.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ShareTechnology/Pods-ShareTechnology.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +218,7 @@
 			children = (
 				A51766E02174C38D00485CDA /* Tilt */,
 				A51766C22174C38700485CDA /* CoreData */,
+				A51766E82175823500485CDA /* CalculationOfWages */,
 			);
 			path = Tilt;
 			sourceTree = "<group>";
@@ -358,6 +373,46 @@
 			name = HanXiao;
 			sourceTree = "<group>";
 		};
+		A51766E82175823500485CDA /* CalculationOfWages */ = {
+			isa = PBXGroup;
+			children = (
+				A51766E92175823500485CDA /* Controller */,
+				A51766EA2175823500485CDA /* Model */,
+				A51766EB2175823500485CDA /* View */,
+			);
+			path = CalculationOfWages;
+			sourceTree = "<group>";
+		};
+		A51766E92175823500485CDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A51766EC2175825100485CDA /* STWCalculationOfWagesViewController.h */,
+				A51766ED2175825100485CDA /* STWCalculationOfWagesViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A51766EA2175823500485CDA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A51766EF2175829D00485CDA /* TaxLevel.plist */,
+				A51766F22175829D00485CDA /* TWCalculationOfWagesCommon.h */,
+				A51766F32175829D00485CDA /* TWCalculationOfWagesCommon.m */,
+				A51766F12175829D00485CDA /* TWTaxLevel.h */,
+				A51766F02175829D00485CDA /* TWTaxLevel.m */,
+				A51766F72175881600485CDA /* STWWagesBill.h */,
+				A51766F82175881600485CDA /* STWWagesBill.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A51766EB2175823500485CDA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F0CF9992C6ECC27056681E1D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -428,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A51766BA2174C18B00485CDA /* DemoList.plist in Resources */,
+				A51766F42175829D00485CDA /* TaxLevel.plist in Resources */,
 				A517667A2174942C00485CDA /* LaunchScreen.storyboard in Resources */,
 				A51766772174942C00485CDA /* Assets.xcassets in Resources */,
 			);
@@ -479,6 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A51766F52175829D00485CDA /* TWTaxLevel.m in Sources */,
+				A51766EE2175825100485CDA /* STWCalculationOfWagesViewController.m in Sources */,
 				A51766DE2174C38700485CDA /* DBManager+User.m in Sources */,
 				A51766902174973700485CDA /* STNavViewController.m in Sources */,
 				A51766AA2174A8C900485CDA /* STHanXiaoViewController.m in Sources */,
@@ -486,11 +544,13 @@
 				A51766932174975300485CDA /* STBaseViewController.m in Sources */,
 				A51766B02174A96B00485CDA /* NSString+CreateImage.m in Sources */,
 				A51766DB2174C38700485CDA /* TWUser+CoreDataClass.m in Sources */,
+				A51766F92175881600485CDA /* STWWagesBill.m in Sources */,
 				A51766C02174C24900485CDA /* STWDemoTableViewCell.m in Sources */,
 				A51766DF2174C38700485CDA /* DBManager.m in Sources */,
 				A51766B52174B3C300485CDA /* UIImage+Extension.m in Sources */,
 				A51766DA2174C38700485CDA /* TWWork+CoreDataProperties.m in Sources */,
 				A51766D92174C38700485CDA /* TWWork+CoreDataClass.m in Sources */,
+				A51766F62175829D00485CDA /* TWCalculationOfWagesCommon.m in Sources */,
 				A517668D217496C200485CDA /* STTabBarViewController.m in Sources */,
 				A51766E72175780D00485CDA /* NSString+Extension.m in Sources */,
 				A51766DC2174C38700485CDA /* TWUser+CoreDataProperties.m in Sources */,

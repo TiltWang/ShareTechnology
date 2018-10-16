@@ -10,5 +10,13 @@
 		<key>jump</key>
 		<string>STWCoreDataViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>工资计算</string>
+		<key>subtitle</key>
+		<string>新的起征点工资计算</string>
+		<key>jump</key>
+		<string>STWCalculationOfWagesViewController</string>
+	</dict>
 </array>
 </plist>
