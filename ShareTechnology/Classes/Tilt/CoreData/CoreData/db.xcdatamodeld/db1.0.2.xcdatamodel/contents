@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17G2307" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="1.0.0">
+    <entity name="TWUser" representedClassName="TWUser" syncable="YES">
+        <attribute name="user_age" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="has_work" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TWWork" inverseName="has_user" inverseEntity="TWWork" syncable="YES"/>
+    </entity>
+    <entity name="TWWork" representedClassName="TWWork" syncable="YES">
+        <attribute name="work_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="work_name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="has_user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TWUser" inverseName="has_work" inverseEntity="TWUser" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TWUser" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="TWWork" positionX="-54" positionY="9" width="128" height="90"/>
+    </elements>
+</model>
